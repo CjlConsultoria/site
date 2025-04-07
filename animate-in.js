@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 //Fim das bolinhas//
 
-const words = ["TÉCNOLOGIA", "DESENVOLVIMENTO", "INOVAÇÃO", "FUTURO", "CRIATIVIDADE"];
+const words = ["SUPORTE ESPECIALIZADO", "DESENVOLVIMENTO ÁGIL", "EFICIÊNCIA DIGITAL", "SEGURANÇA CIBERNÉTICA", "INOVAÇÃO DIGITAL"];
 let index = 0;
 
 function changeWord() {

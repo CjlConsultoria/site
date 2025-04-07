@@ -669,6 +669,7 @@ fieldset:disabled a.btn {
     .show > .btn-dark.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(48, 48, 48, 0.5); }
 
+      /*Cores dos botoes*/
 .btn-outline-primary {
   color: #ffffff;
   background-color: transparent;
@@ -676,21 +677,21 @@ fieldset:disabled a.btn {
   border-color: #979797b2; }
   .btn-outline-primary:hover {
     color: #000000;
-    background-color: #cecece;
+    background-color: #dfdfdf;
     border-color: #696969; }
   .btn-outline-primary:focus, .btn-outline-primary.focus {
     box-shadow: 0 0 0 0.2rem rgba(58, 58, 58, 0.5); }
   .btn-outline-primary.disabled, .btn-outline-primary:disabled {
-    color: #f1cd31;
+    color: #f17731;
     background-color: transparent; }
   .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
   .show > .btn-outline-primary.dropdown-toggle {
     color: #212529;
-    background-color: #f1cd31;
-    border-color: #f1cd31; }
+    background-color: #dfdfdf;
+    border-color: #2b2b2b; }
     .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-primary.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(241, 205, 49, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(214, 214, 214, 0.5); }
 
 .btn-outline-secondary {
   color: #f70655;
@@ -4811,7 +4812,7 @@ body::after {
 }
 .text-overlay {
     position: absolute;
-    top: 50%; /* Ajustado para descer mais */
+    top: 53%; /* Ajustado para descer mais */
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -4822,12 +4823,15 @@ body::after {
 }
 
 .line {
-    width: 98%; /* Agora a linha vai quase até as bordas da tela */
-    max-width: none; /* Remove a limitação de tamanho máximo */
-    height: 1px; /* Linha fina */
-    background-color: rgba(255, 255, 255, 0.2); /* Quase transparente */
-    margin: 5px auto;
+  width: 100%; /* Mantenha a largura da linha em 100% da tela */
+  max-width: none; /* Remove a limitação de tamanho máximo */
+  height: 1px; /* Linha fina */
+  background-color: rgba(255, 255, 255, 0.2); /* Quase transparente */
+  margin: 5px auto;
+  position: relative; /* Permite ajustar a posição da linha */
+  left: -4%; /* Ajusta a linha para a esquerda */
 }
+
 .navbar {
     transition: background-color 0.3s;
   }
@@ -4908,7 +4912,7 @@ body::after {
   }
   #slideText {
     font-weight: 300 !important; /* mais fino */
-    font-size: 2rem !important;  /* menor */
+    font-size: 1.1rem !important;  /* menor */
     font-family: inherit;
     letter-spacing: 2px;
   }
@@ -5105,5 +5109,48 @@ body::after {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* sombra mais forte */
     z-index: 1;
   }
+  .nossa-historia {
+    color: white;
+    padding: 100px 5vw 60px 5vw; /* Reduzi o padding superior */
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: inherit;
+    font-weight: 100;
+    width: 100%;
+  }
   
+  .texto-historia {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-family: inherit;
+    font-weight: 300;
+    color: #b1b1b1;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .nossa-historia {
+      padding: 120px 20px 40px 20px; /* Reduzi o padding superior para telas menores */
+    }
+  
+    .titulo-historia {
+      font-size: 1.5rem;
+    }
+  
+    .texto-historia {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .titulo-historia {
+      font-size: 1.3rem;
+    }
+  
+    .texto-historia {
+      font-size: 0.9rem;
+    }
+  }
   
