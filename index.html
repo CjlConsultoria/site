@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <!-- Script: Make my navbar transparent when the document is scrolled to top -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  </head>
+  
     <script src="js/navbar-ontop.js"></script>
     <script src="animate-in.js"></script>
     <canvas id="particleCanvas"></canvas>
@@ -32,10 +32,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Script: Animated entrance -->
     <script src="js/animate-in.js" defer></script>
-    <style> html {
-    scroll-behavior: smooth;
-  }
-    </style>
+
   </head>
   <div id="preloader">
     <div class="spinner">
@@ -162,11 +159,11 @@
       Empresa com crescimento nacional nos últimos 5 anos inovando tecnologias, conformidade e segurança ao seu negócio.
       Sabemos da importância da sua empresa e por isso nos adaptamos ao modelo empresarial e a qualquer regra de negócio.
     </p>
-    <a class="btn navbar-btn mx-2 btn-outline-primary" href="#servicos">Serviços para empresas</a>
+    <a class="btn navbar-btn mx-2 btn-outline-primary" href="#servicos">Serviços para empresas</a></section>
 
 
 
-        <br><br><br><br><section class="cjl-tisecao">
+        <br><section class="cjl-tisecao">
           <div class="container-cjl">
             <h2 class="cjl-titulo" style="font-weight: bold; font-family: inherit;">Empresa de TI em SP</h2>
 
@@ -248,7 +245,7 @@
               
               <a class="btn navbar-btn mx-2 btn-outline-primary" href="#servicos" style="color: black;">Saiba mais</a>
             </div>
-          </div>
+          </div></section>
           </section>
         <div class="nossa-historia">
           <h2 class="titulo-historia">Nossa história</h2>
@@ -262,40 +259,45 @@
           </p>
         </div>
         <section class="clientes-satisfeitos">
-          <div class="cards-container">
-              <div class="card" id="card1">
-                  <i class="fas fa-user"></i>
+          <div class="fundo-branco-inferior"><br>
+        
+            <div class="cards-numeros-wrapper">
+              <div class="card-group">
+                <div class="card" style="background-color: #202020; color: white;">
+                  <i class="fas fa-user" style="color: white;"></i>
+                </div>
+                <p id="counter1" class="counter" style="color: #333333;">0+</p>
+                <p class="small-text">CLIENTES SATISFEITOS</p>
               </div>
-              <div class="card" id="card2">
-                  <i class="fas fa-tools"></i>
+              <div class="card-group">
+                <div class="card" style="background-color: #202020; color: white;">
+                  <i class="fas fa-tools" style="color: white;"></i>
+                </div>
+                <p id="counter2" class="counter" style="color: #333333;">0+</p>
+                <p class="small-text">PROJETOS CONCLUÍDOS</p>
               </div>
-              <div class="card" id="card3">
-                  <i class="fas fa-briefcase"></i>
+              <div class="card-group">
+                <div class="card" style="background-color: #202020; color: white;">
+                  <i class="fas fa-briefcase" style="color: white;"></i>
+                </div>
+                <p id="counter3" class="counter" style="color: #333333;">0MIN</p>
+                <p class="small-text">MÉDIA DE RESOLUÇÃO DE CHAMADOS</p>
               </div>
-              <div class="card" id="card4">
-                  <i class="fas fa-trophy"></i>
+              <div class="card-group">
+                <div class="card" style="background-color: #202020; color: white;">
+                  <i class="fas fa-trophy" style="color: white;"></i>
+                </div>
+                <p id="counter4" class="counter" style="color: #333333;">0+</p>
+                <p class="small-text">ANOS DE EXPERIÊNCIA</p>
               </div>
-          </div>
-          <div class="numbers-container">
-              <div class="counter-container">
-                  <p id="counter1" class="counter" style="margin-left: 15px;">0+</p>
-                  <p class="small-text" style="margin-left: 0px;">CLIENTES SATISFEITOS</p>
-              </div>
-              <div class="counter-container">
-                  <p id="counter2" class="counter" style="margin-left: 15px;">0+</p>
-                  <p class="small-text" style="margin-left: 5px;">PROJETOS CONCLUÍDOS</p>
-              </div>
-              <div class="counter-container">
-                  <p id="counter3" class="counter" style="margin-left: 15px;">0MIN</p>
-                  <p class="small-text" style="margin-left: 25px;">MÉDIA DE RESOLUÇÃO DE CHAMADOS</p>
-              </div>
-              <div class="counter-container">
-                <p id="counter4" class="counter" style="margin-left: 15px;">0+</p>
-                <p class="small-text" style="margin-left: 25px;">ANOS DE EXPERIÊNCIAS</p>
-              </div>
+            </div>
+        
           </div>
         </section>
         
+        
+        
+     
         <script>
           function incrementCounter(counterId, targetNumber, suffix = '', prefix = '') {
             const counterElement = document.getElementById(counterId);
@@ -345,15 +347,8 @@
           if (target) {
             observer.observe(target);
           }
-        </script>
-        
-        
-      
-      
-      
-      
-  
-      <script src="animate-in.js"></script>
-        
+        </script></header>
+
+
   </body>
   </html>

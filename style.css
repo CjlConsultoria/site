@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+
   padding: 0;
   box-sizing: border-box;
   font-family: inherit;
@@ -67,7 +67,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
 body {
-  margin: 0;
+
   padding: 0;
   overflow-x: hidden;
   font-family: Montserrat;
@@ -186,9 +186,6 @@ pre {
   overflow: auto;
   -ms-overflow-style: scrollbar; }
 
-figure {
-  margin: 0 0 1rem; }
-
 
 
 h1, h2, h3, h4, h5, h6,
@@ -248,7 +245,7 @@ h6, .h6 {
     content: "\2014 \00A0"; }
 
 .img-fluid {
-  max-width: 100%;
+  
   height: auto; }
 
 .img-thumbnail {
@@ -256,7 +253,7 @@ h6, .h6 {
   background-color: #111;
   border: 1px solid #5431f1;
   border-radius: 0.75rem;
-  max-width: 100%;
+  
   height: auto; }
 
 .figure {
@@ -305,27 +302,13 @@ pre {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto; }
-  @media (min-width: 576px) {
-    .container {
-      max-width: 540px; } }
-  @media (min-width: 768px) {
-    .container {
-      max-width: 720px; } }
-  @media (min-width: 992px) {
-    .container {
-      max-width: 960px; } }
-  @media (min-width: 1200px) {
-    .container {
-      max-width: 1140px; } }
+ }
 
 .container-fluid {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto; }
+}
 
 
 .invalid-feedback {
@@ -340,7 +323,7 @@ pre {
   top: 100%;
   z-index: 5;
   display: none;
-  max-width: 100%;
+
   padding: 0.25rem 0.5rem;
   margin-top: .1rem;
   font-size: 1.1375rem;
@@ -1859,7 +1842,7 @@ input[type="button"].btn-block {
       border-left-color: #000; }
 
 .tooltip-inner {
-  max-width: 200px;
+
   padding: 0.25rem 0.5rem;
   color: #fff;
   text-align: center;
@@ -1872,7 +1855,7 @@ input[type="button"].btn-block {
   left: 0;
   z-index: 1060;
   display: block;
-  max-width: 276px;
+ 
   font-family: Montserrat;
   font-style: normal;
   font-weight: 200;
@@ -4392,8 +4375,7 @@ html, body {
 
     header {
       width: 100%;
-      height: 14%;
-      padding: 40px 10%;
+      height: 100%;
      
       top: 0;
       left: 0;
@@ -4441,7 +4423,7 @@ html, body {
     }
     
     header .logo-topo img {
-      max-width: 60px;
+    
       cursor: pointer;
       animation: pulse 2s infinite;
     }
@@ -4469,7 +4451,7 @@ html, body {
 
     .slider-container {
       width: 100%;
-      max-width: 300px;
+
       overflow: hidden;
       position: relative;
       margin: 0 auto;
@@ -4826,7 +4808,7 @@ body::after {
 
 .line {
   width: 100%; /* Mantenha a largura da linha em 100% da tela */
-  max-width: none; /* Remove a limitação de tamanho máximo */
+
   height: 1px; /* Linha fina */
   background-color: rgba(255, 255, 255, 0.2); /* Quase transparente */
   margin: 5px auto;
@@ -4926,7 +4908,7 @@ body::after {
   .sobre-cjl {
     color: white;
     padding: 380px 5vw 60px 5vw;
-    max-width: 1200px;
+
     margin: 0 auto;
     text-align: center;
     font-family: inherit;
@@ -4997,7 +4979,7 @@ body::after {
   }
   
   .cjl-tisecao {
-    width: 100vw;
+   
     margin: 0;
     padding: 80px 0;
     background-color: white;
@@ -5007,11 +4989,13 @@ body::after {
     left: 50%;
     transform: translateX(-50%);
     z-index: 0;
+    width: calc(100vw - 10px); /* Compensa a barra de rolagem */
+    overflow-x: hidden;
   }
   
   .container-cjl {
     width: 100%;
-    max-width: 1200px;
+  
     margin: 0 auto;
     padding: 0 20px;
     text-align: center;
@@ -5114,7 +5098,7 @@ body::after {
   .nossa-historia {
     color: white;
     padding: 100px 5vw 60px 5vw; /* Reduzi o padding superior */
-    max-width: 1200px;
+
     margin: 0 auto;
     text-align: center;
     font-family: inherit;
@@ -5129,7 +5113,7 @@ body::after {
     font-family: inherit;
   font-weight: 900; /* Deixa a fonte bem fina */
     font-weight: 300;
-    color: #808080;
+    color: #808080
   }
   
   /* Responsivo */
@@ -5156,16 +5140,23 @@ body::after {
       font-size: 0.9rem;
     }
   }
-  /* Garantir que apenas a seção ocupe toda a largura da tela */
-  .cards-container {
+  .cards-numeros-wrapper {
     display: flex;
-    justify-content: space-around;
-    gap: 10px;
-    width: 100%;
+    justify-content: center;
+    gap: 2cm; /* Espaço exato entre cada card completo */
     margin-top: 20px;
-}
-
-.card {
+  }
+  
+  .card-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 160px; /* ✅ Força todos os grupos a terem o mesmo tamanho */
+  }
+  
+  
+  .card {
     background-color: #ffffff;
     padding: 30px;
     border-radius: 8px;
@@ -5175,44 +5166,26 @@ body::after {
     justify-content: center;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.card i {
+  }
+  
+  .card i {
     font-size: 40px;
     color: #333;
-}
-
-.numbers-container {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 20px;
-    margin-left: -10px; /* Move os números e os textos para a esquerda */
-}
-
-.counter-container {
-    text-align: center;
-    width: 25%; /* Garantir que cada contador ocupe uma fração igual da largura */
-}
-
-.counter {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #e0e0e0;
-    font-family: inherit;
-  font-weight: 900; /* Deixa a fonte bem fina */
-}
-
-.small-text {
-    font-size: 0.7rem;
-    color: #555;
-    margin-top: 5px;
-    margin-left:10px;
-    font-family: inherit;
-  font-weight: 900; /* Deixa a fonte bem fina */
+  }
   
-}
+  .counter {
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 10px 0 5px;
+    color: #e0e0e0;
+  }
+  
+  .small-text {
+    font-size: 0.7rem;
+    font-weight: 900;
+    color: #555;
+  }
+  
 @media (max-width: 1200px) {
   .text-overlay {
     top: -48%; /* Subiu */
@@ -5580,4 +5553,13 @@ body::after {
     width: 32px;
     height: 32px;
   }
+}
+.fundo-branco-inferior {
+  width: 100vw;
+  height: 380px; /* ajuste a altura como quiser */
+  background-color: white;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
 }
