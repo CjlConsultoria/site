@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: inherit;
+  font-weight: 900; /* Deixa a fonte bem fina */
 }
 /*!
 * Neon Pingendo template (https://templates.pingendo.com)
@@ -5103,7 +5105,7 @@ body::after {
     border-top: 1px solid #ccc;
   }
   .cjl-cards .cjl-card:nth-child(2) {
-    background-color: #f3f1c9; /* cor personalizada */
+    background-color: #dbd89e; /* cor personalizada */
  
     transform: translateY(-20px); /* efeito "mais para cima" */
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* sombra mais forte */
@@ -5116,7 +5118,7 @@ body::after {
     margin: 0 auto;
     text-align: center;
     font-family: inherit;
-    font-weight: 100;
+    font-weight: 900; /* Deixa a fonte bem fina */
     width: 100%;
   }
   
@@ -5125,6 +5127,7 @@ body::after {
     line-height: 1.6;
     margin-bottom: 30px;
     font-family: inherit;
+  font-weight: 900; /* Deixa a fonte bem fina */
     font-weight: 300;
     color: #b1b1b1;
   }
@@ -5153,4 +5156,60 @@ body::after {
       font-size: 0.9rem;
     }
   }
+  /* Garantir que apenas a seção ocupe toda a largura da tela */
+  .cards-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card i {
+    font-size: 40px;
+    color: #333;
+}
+
+.numbers-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: -10px; /* Move os números e os textos para a esquerda */
+}
+
+.counter-container {
+    text-align: center;
+    width: 25%; /* Garantir que cada contador ocupe uma fração igual da largura */
+}
+
+.counter {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #e0e0e0;
+    font-family: inherit;
+  font-weight: 900; /* Deixa a fonte bem fina */
+}
+
+.small-text {
+    font-size: 0.7rem;
+    color: #555;
+    margin-top: 5px;
+    margin-left:10px;
+    font-family: inherit;
+  font-weight: 900; /* Deixa a fonte bem fina */
   
+}

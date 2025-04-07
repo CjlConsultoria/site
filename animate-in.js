@@ -129,4 +129,26 @@ window.addEventListener('scroll', function() {
       behavior: 'smooth'
     });
   }
+// Função para incrementar os números de 0 até 100
+// Função para incrementar os números de 0 até 100
+function incrementCounter(counterId, maxCount) {
+  let count = 0;
+  const counterElement = document.querySelector(`#${counterId}`);
+  
+  const interval = setInterval(() => {
+      if (count < maxCount) {
+          count++;
+          counterElement.textContent = `+${count}`;
+      } else {
+          clearInterval(interval);
+      }
+  }, 50); // Intervalo de 50ms entre as atualizações
+}
+
+// Iniciar a contagem para cada card
+incrementCounter("counter1", 100);
+incrementCounter("counter2", 100);
+incrementCounter("counter3", 100);
+incrementCounter("counter4", 100);
+
 
