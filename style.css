@@ -4989,7 +4989,7 @@ body::after {
     left: 50%;
     transform: translateX(-50%);
     z-index: 0;
-    width: calc(100vw - 10px); /* Compensa a barra de rolagem */
+    width: calc(100vw - 5px); /* Compensa a barra de rolagem */
     overflow-x: hidden;
   }
   
@@ -5080,6 +5080,7 @@ body::after {
     margin-bottom: 10px;
     letter-spacing: 3px; /* adiciona espaçamento entre as letras */
     color: #5c5c5c;
+    
   }
   
   .cjl-linha {
@@ -5563,3 +5564,285 @@ body::after {
   transform: translateX(-50%);
   z-index: 0;
 }
+
+
+/*okk*/
+
+/* Wrapper da imagem com efeito parallax */
+.rbm-container {
+  margin-top: 1500px;
+  width: 100%;
+  position: relative;}
+ 
+  
+  .rbm-imagem-wrapper {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+    height: 920px;
+    background-image: url('img/tecnologia-no-mundo-de-trabalho-1024x683.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    padding: 0;
+  }
+  
+  
+
+/* Sobreposição com fundo escuro */
+.rbm-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+/* Fundo escuro acompanhando 100% da imagem */
+.rbm-fundo-escuro {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  padding: 60px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.rbm-titulo {
+  font-size: 3.0rem;
+  margin-bottom: 10px;
+  text-align: center;
+  
+  font-family: inherit;
+}
+
+.rbm-subtitulo {
+  font-family: inherit;
+  font-size: 1.5rem;
+  color: #ccc;
+  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 200; /* fonte fina */
+}
+
+.rbm-descricao {
+  font-family: inherit;
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+  color: #D3D3D3;
+  font-weight: 200;
+}
+
+.rbm-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.rbm-card {
+  padding: 20px;
+  width: 280px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  border: none;
+}
+.rbm-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1000px; /* controla a largura total do conjunto */
+  margin: 0 auto;
+}
+
+.rbm-card {
+  background: transparent;
+  border: none;
+  padding: 20px;
+  width: 280px;
+  border-radius: 10px;
+  text-align: left;
+  color: white; /* mantém a cor do texto visível sobre o fundo escuro */
+  align-items: center;
+  text-align: center;
+}
+
+.rbm-card h3 {
+  font-family: inherit;
+  font-weight: 100;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+
+.rbm-card i {
+  font-size: 1.5rem;
+  margin-bottom: 35px;
+  color: white;
+  border: 2px solid white; /* Borda sólida */
+  padding: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+}
+.rbm-card p {
+  font-family: inherit;
+  font-size: 0.9rem; /* ou 14px, 13px... como preferir */
+  font-weight: 200;
+  color: #b1b1b1;
+}
+/* Telas até 1200px */
+@media (max-width: 1200px) {
+  .rbm-titulo {
+    font-size: 2.5rem;
+  }
+
+  .rbm-subtitulo {
+    font-size: 1.3rem;
+  }
+
+  .rbm-descricao {
+    font-size: 1rem;
+  }
+
+  .rbm-cards {
+    gap: 15px;
+  }
+}
+
+/* Telas até 992px */
+@media (max-width: 992px) {
+  .rbm-imagem-wrapper {
+    height: auto;
+  }
+
+  .rbm-fundo-escuro {
+    padding: 40px 20px;
+  }
+
+  .rbm-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rbm-card {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .rbm-titulo {
+    font-size: 2.2rem;
+  }
+
+  .rbm-subtitulo {
+    font-size: 1.2rem;
+  }
+}
+
+/* Telas até 768px (tablets pequenos e celulares grandes) */
+@media (max-width: 768px) {
+  .rbm-titulo {
+    font-size: 2rem;
+  }
+
+  .rbm-subtitulo {
+    font-size: 1.1rem;
+  }
+
+  .rbm-descricao {
+    font-size: 0.95rem;
+  }
+
+  .rbm-card h3 {
+    font-size: 1rem;
+  }
+
+  .rbm-card p {
+    font-size: 0.85rem;
+  }
+
+  .rbm-card i {
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* Telas até 576px (celulares médios) */
+@media (max-width: 576px) {
+  .rbm-container {
+    margin-top: 800px; /* ajusta o espaço se necessário */
+  }
+
+  .rbm-imagem-wrapper {
+    height: auto;
+  }
+
+  .rbm-titulo {
+    font-size: 1.8rem;
+  }
+
+  .rbm-subtitulo {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .rbm-descricao {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+
+  .rbm-card {
+    padding: 15px;
+  }
+}
+
+/* Telas até 420px (celulares pequenos) */
+@media (max-width: 420px) {
+  .rbm-titulo {
+    font-size: 1.5rem;
+  }
+
+  .rbm-subtitulo {
+    font-size: 0.9rem;
+  }
+
+  .rbm-descricao {
+    font-size: 0.85rem;
+  }
+
+  .rbm-card h3 {
+    font-size: 0.95rem;
+  }
+
+  .rbm-card p {
+    font-size: 0.8rem;
+  }
+
+  .rbm-card i {
+    font-size: 1rem;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
