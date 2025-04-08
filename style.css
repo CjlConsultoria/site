@@ -68,7 +68,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
 body {
-
+width: 100%;
   padding: 0;
   overflow-x: hidden;
   font-family: inherit !important;
@@ -5613,6 +5613,9 @@ body::after {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: inherit;
+  font-weight: 100; /* Extremamente fino */
+  letter-spacing: 1px; /* Se quiser mais espaçamento entre letras */
 }
 
 
@@ -5620,8 +5623,9 @@ body::after {
   font-size: 3.0rem;
   margin-bottom: 10px;
   text-align: center;
-  
   font-family: inherit;
+  font-weight: 100; /* Extremamente fino */
+  letter-spacing: 1px; /* Se quiser mais espaçamento entre letras */
 }
 
 .rbm-subtitulo {
@@ -5642,6 +5646,9 @@ body::after {
   font-size: 1.1rem;
   color: #D3D3D3;
   font-weight: 200;
+  font-family: inherit;
+  font-weight: 100; /* Extremamente fino */
+  letter-spacing: 1px; /* Se quiser mais espaçamento entre letras */
 }
 
 .rbm-cards {
@@ -5795,6 +5802,7 @@ body::after {
     padding: 10px;
     width: 44px;
     height: 44px;
+    
   }
 }
 
@@ -5859,6 +5867,9 @@ body::after {
 .clientes-rbm {
   padding: 60px 20px; 
   text-align: center;
+  font-family: inherit;
+  font-weight: 100; /* Extremamente fino */
+  letter-spacing: 1px; /* Se quiser mais espaçamento entre letras */
 }
 
 .clientes-titulo {
@@ -5866,6 +5877,9 @@ body::after {
   margin-bottom: 40px;
   font-family: inherit;
   color: #000;
+  font-family: inherit;
+  font-weight: 100; /* Extremamente fino */
+  letter-spacing: 1px; /* Se quiser mais espaçamento entre letras */
 }
 
 .logos-clientes {
@@ -5898,9 +5912,12 @@ body::after {
   justify-content: flex-start;
   align-items: center;
   padding: 60px 20px;
-  height: 500px; /* ⬅️ Altura maior */
-  background: none; /* ou coloque uma cor ou imagem, se quiser */
+  height: 500px;
+  font-family: inherit;
+  font-weight: 100; /* Extremamente fino */
+  letter-spacing: 1px; /* Se quiser mais espaçamento entre letras */
 }
+
 
 .form-box-rbm {
   background: rgba(255, 255, 255, 0.15); /* fundo branco transparente */
@@ -5961,120 +5978,29 @@ body::after {
   }
 }
 
-footer {
-  background-color: #111;
-  margin-top: 100px;
-  color: #ccc;
-
-  font-family: 'Arial', sans-serif;
-  height: 12cm;
-  display: flex;
-  align-items: center;
-}
-
-footer .container-fluid {
-  max-width: 1400px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-footer .row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-  flex-wrap: wrap;
-}
-
-footer .row > div {
-  padding: 10px;
-  flex: 1;
-  min-width: 200px;
-}
-
-footer iframe {
-  width: 250px;
-  height: 100px;
-  border-radius: 10px;
-  border: none;
-}
-
-footer h3 {
-  color: #fff;
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-footer a {
-  color: #ccc;
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: #1e90ff;
-  text-decoration: underline;
-}
-
-footer input.form-control {
-  color: #fff;
-  border: 1px solid #555;
-  background-color: transparent;
-}
-
-footer .form-control::placeholder {
-  color: #999;
-}
-
-footer .fa {
-  transition: 0.3s ease;
-}
-
-footer .fa:hover {
-  color: #1e90ff;
-  transform: scale(1.1);
-}
-
-footer .text-muted {
-  color: #999 !important;
-}
-
-footer .img-fluid {
-  max-width: 160px;
-  height: auto;
-  border-radius: 6px;
-}
-
-@media (max-width: 768px) {
-  footer {
-    height: auto;
-    text-align: center;
-    padding: 30px 15px;
-  }
-
-  footer .row {
-    flex-direction: column;
-  }
-
-  footer iframe {
-    width: 100%;
-    height: 200px;
-    margin-top: 15px;
-  }
-}
 .formulario-container-rbm {
   display: flex;
   justify-content: space-between;
-  align-items: stretch; /* isso é o segredo! */
+  align-items: stretch;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   gap: 40px;
 }
 
-.mapa-box-rbm iframe {
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+.form-box-rbm {
+  max-width: 50%;
+  width: 100%;
 }
+
+.mapa-box-rbm {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
 
 /* Responsivo */
 @media (max-width: 768px) {
@@ -6082,6 +6008,9 @@ footer .img-fluid {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-family: inherit;
+    font-weight: 100; /* Extremamente fino */
+    letter-spacing: 1px; /* Se quiser mais espaçamento entre letras */
   }
 
   .mapa-box-rbm iframe {
@@ -6115,6 +6044,9 @@ footer .img-fluid {
   padding: 60px 20px;
   height: 500px; /* altura desejada */
   background: none;
+  font-family: inherit;
+  font-weight: 100; /* Extremamente fino */
+  letter-spacing: 1px; /* Se quiser mais espaçamento entre letras */
 }
 .form-box-rbm {
   background: rgba(0, 0, 0, 0.9); /* ⬅️ Fundo escuro com transparência */
@@ -6124,6 +6056,9 @@ footer .img-fluid {
   max-width: 500px;
   width: 100%;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  font-family: inherit;
+  font-weight: 100; /* Extremamente fino */
+  letter-spacing: 1px; /* Se quiser mais espaçamento entre letras */
 }
 .rbm-bloco-preto-imagem {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
@@ -6182,4 +6117,236 @@ footer .img-fluid {
 .rbm-botoes a.btn-outline-light:hover {
   background-color: white;
   color: #000;
+}
+.rodape-site {
+  background-color: #111;
+  color: #ccc;
+  padding: 60px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.conteudo-rodape {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-family: inherit;
+  font-weight: 100; /* Extremamente fino */
+  letter-spacing: 1px; /* Se quiser mais espaçamento entre letras */
+}
+
+.conteudo-rodape h3 {
+  font-size: 1.2rem;
+  color: #ccc;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.icones-sociais {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icones-sociais a {
+  font-size: 1.5rem;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.icones-sociais a:hover {
+  color: white;
+}
+
+.botao-appstore {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.botao-appstore img {
+  height: 40px;
+  width: auto;
+  margin-top: 10px;
+}
+
+.direitos {
+  margin-top: 180px;
+  font-size: 1rem;
+  color: #999;
+  font-family: inherit;
+  font-weight: 100; /* Extremamente fino */
+  letter-spacing: 1px; /* Se quiser mais espaçamento entre letras */
+}
+
+/* Estilização do Rodapé */
+.rodape-site {
+  width: 100%;
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Conteúdo do Rodapé */
+.conteudo-rodape {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+/* Título e Redes Sociais à esquerda */
+.rodape-esquerda {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.rodape-esquerda h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #eeeeee;
+}
+
+.icones-sociais {
+  display: flex;
+  gap: 10px;
+}
+
+.icones-sociais a {
+  color: #ccc;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.icones-sociais a:hover {
+  color: #fff;
+}
+
+/* Título Consultoria CJL (no centro) */
+.rodape-centro {
+  text-align: center;
+  flex: 1;
+}
+
+/* Mapa à direita */
+.rodape-direita {
+  flex-shrink: 0;
+  width: 40%;
+  margin-left: auto; /* Empurra o mapa para o lado direito */
+}
+
+
+/* Título Consultoria CJL no topo do rodapé */
+.titulo-rodape {
+  text-align: center;
+  padding: 5px 0;
+}
+
+.titulo-rodape h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Rodapé */
+/* Título Consultoria CJL no topo do rodapé */
+.titulo-rodape {
+  text-align: center;
+  padding: 5px 0;
+}
+
+.titulo-rodape h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Rodapé */
+.rodape-site {
+  background-color: #222;
+  color: white;
+  padding: 2px 0; /* Diminuí ainda mais o padding para 2px */
+  width: 100%;
+  box-sizing: border-box; /* Garante que a largura 100% não cause problemas */
+}
+
+.icones-sociais a {
+  margin: 0 10px; /* Aumenta o espaço entre os ícones */
+  color: #bbb;
+  font-size: 2.5rem; /* Aumenta o tamanho dos ícones */
+}
+
+.icones-sociais a:hover {
+  color: #fff;
+}
+
+/* Redes sociais */
+.rodape-esquerda {
+  text-align: left;
+  padding: 0 15px; /* Ajustei o padding para não afetar a largura do conteúdo */
+}
+
+.rodape-esquerda h4 {
+  margin: 0;
+  font-size: 1.5rem; /* Aumenta o tamanho da fonte */
+  font-weight: bold;
+  margin-left: 55px; /* Adiciona margem para mover o título mais para a direita */
+}
+
+/* Mapa */
+/* Mapa (rodape-direita) */
+/* Mapa (rodape-direita) */
+.rodape-direita {
+  text-align: right;
+  padding: 0 15px;
+  width: 40%;
+  float: right;
+  margin-left: 680px; /* Margem negativa para mover o mapa para a esquerda */
+  margin-top: -110px; /* Ajuste a margem para mover o mapa para cima */
+}
+
+
+/* Direitos Reservados */
+
+/* Estilo para o título */
+.titulo-rodape h3 {
+  font-size: 2.5rem; /* Tamanho maior da fonte */
+  color: #eeeeee; /* Cor do título */
+  margin: 0; /* Remover margens */
+  letter-spacing: 1px; /* Espaçamento entre as letras */
+}
+
+/* Estilo para o subtítulo */
+.subtitulo-rodape {
+  font-size: 1.0rem; /* Tamanho da fonte do subtítulo */
+  color: #b3b3b3; /* Cor do subtítulo */
+  margin-top: 5px; /* Margem entre título e subtítulo */
+  letter-spacing: 2px; /* Espaçamento entre as letras */
+  font-family: inherit;
+  font-weight: 100;
+}
+/* Adicionar fonte personalizada */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.direitos-reservados {
+  text-align: center;
+  font-size: 1rem;
+  color: #999;
+  margin-top: 5px;
+  font-family: 'Roboto', sans-serif; /* Usando a fonte Roboto */
+  font-weight: 100; /* Peso da fonte, mais leve */
 }
