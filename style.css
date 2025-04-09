@@ -69,6 +69,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
 width: 100%;
+margin: 0;
   padding: 0;
   overflow-x: hidden;
   font-family: inherit !important;
@@ -79,7 +80,7 @@ width: 100%;
   color: #efefef;
   text-align: left;
   background-color:rgb(19, 19, 19); 
-min-height: 200vh; /* 200% da altura da tela */
+min-height: 100vh; /* 200% da altura da tela */
 height: 100%; /* Garantir que o body e html ocupem toda a altura */
 overflow-x: hidden; /* Impede rolagem lateral */}
 
@@ -4793,7 +4794,7 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Ajuste o valor para mais ou menos transparência */
+    background: rgba(0, 0, 0, 0.8); /* Ajuste o valor para mais ou menos transparência */
     pointer-events: none; /* Para não interferir na interação */
 }
 .text-overlay {
@@ -6117,14 +6118,31 @@ body::after {
 }
 
 
+/* Rodapé */
+/* Rodapé */
 .conteudo-rodape {
   display: flex;
-  flex-direction: row; /* ou column, se preferir em colunas */
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 280px;
+  background-color: #ccc;
+  height: 280px; /* ajuste a altura conforme necessário */
   padding: 20px;
   box-sizing: border-box;
+  width: 100%; /* Garante que o rodapé ocupe 100% da largura */
+  position: relative; /* Pode ser ajustado se necessário */
+  margin-top: auto; /* Isso empurra o rodapé para o fundo da página */
+  left: 0; /* Faz o rodapé encostar na lateral esquerda */
+}
+
+/* Se for necessário garantir que o rodapé fique fixo no fundo da tela, use o seguinte */
+footer {
+  position: relative; /* Mantém o rodapé dentro da área de conteúdo */
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Isso ocupa 100% da largura da tela */
+  z-index: 10; /* Pode ser ajustado se sobrepor outros elementos */
+
 }
 .rodape-direita iframe {
   width: 100%;
@@ -6209,14 +6227,7 @@ body::after {
 
 
 /* Conteúdo do Rodapé */
-.conteudo-rodape {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1200px;
-  align-items: flex-start;
-  margin-bottom: 20px;
-}
+
 
 /* Título e Redes Sociais à esquerda */
 .rodape-esquerda {
@@ -6413,4 +6424,87 @@ body::after {
   height: 100%;
   border: none;
   border-radius: 12px;
+}
+/* Estilos para a imagem */
+.about-us-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-top: 80px; /* Adiciona um espaçamento para mover a seção para baixo */
+}
+
+.content-left,
+.content-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Garante que o conteúdo fique no topo da coluna */
+}
+
+h1.main-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p.subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+p.description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+
+.content-right img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .about-us-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-left {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .content-right img {
+    max-width: 90%;
+  }
+
+  h1.main-title {
+    font-size: 2rem;
+  }
+
+  p.subtitle {
+    font-size: 1.3rem;
+  }
+
+  p.description {
+    font-size: 0.9rem;
+  }
+
+  a.btn {
+    font-size: 1rem;
+  }
 }
