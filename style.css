@@ -3,7 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: inherit;
-  font-weight: 900; /* Deixa a fonte bem fina */
+  font-weight: 900; /* Deixa a fonte bem fina */* {
+    box-sizing: border-box;
+  }
+  
 }
 /*!
 * Neon Pingendo template (https://templates.pingendo.com)
@@ -6454,12 +6457,16 @@ p.subtitle {
   font-weight: 600;
   color: #555;
   margin-bottom: 20px;
+  font-family: inherit;
+  font-weight: 100;
 }
 
 p.description {
   font-size: 1rem;
   color: #666;
   margin-bottom: 15px;
+  font-family: inherit;
+  font-weight: 100;
 }
 
 
