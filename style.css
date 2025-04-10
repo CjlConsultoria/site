@@ -5588,7 +5588,7 @@ body::after {
     margin-left: -50vw;
     margin-right: -50vw;
     width: 100vw;
-    height: 1020px;
+    height: 1120px;
     background-image: url('img/inteligencia_artificial.png');
     background-size: cover;
     background-position: center;
@@ -5630,6 +5630,7 @@ body::after {
   font-family: inherit;
   font-weight: 100; /* Extremamente fino */
   letter-spacing: 1px; /* Se quiser mais espaçamento entre letras */
+  margin-top: 210px;
 }
 
 .rbm-subtitulo {
