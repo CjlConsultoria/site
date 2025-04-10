@@ -4268,115 +4268,6 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #303030; } }
 
-html, body {
-  height: 100%; }
-
-.bg-primary {
-  color: #212529; }
-  .bg-primary input::-webkit-input-placeholder {
-    color: rgba(33, 37, 41, 0.8); }
-  .bg-primary input:-ms-input-placeholder {
-    color: rgba(33, 37, 41, 0.8); }
-  .bg-primary input::-ms-input-placeholder {
-    color: rgba(33, 37, 41, 0.8); }
-  .bg-primary input::placeholder {
-    color: rgba(33, 37, 41, 0.8); }
-  .bg-primary .input-group-text {
-    color: #212529; }
-
-.bg-secondary {
-  color: #fff; }
-  .bg-secondary input::-webkit-input-placeholder {
-    color: rgba(255, 255, 255, 0.8); }
-  .bg-secondary input:-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.8); }
-  .bg-secondary input::-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.8); }
-  .bg-secondary input::placeholder {
-    color: rgba(255, 255, 255, 0.8); }
-  .bg-secondary .input-group-text {
-    color: #fff; }
-
-.bg-success {
-  color: #fff; }
-  .bg-success input::-webkit-input-placeholder {
-    color: rgba(255, 255, 255, 0.8); }
-  .bg-success input:-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.8); }
-  .bg-success input::-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.8); }
-  .bg-success input::placeholder {
-    color: rgba(255, 255, 255, 0.8); }
-  .bg-success .input-group-text {
-    color: #fff; }
-
-.bg-info {
-  color: #fff; }
-  .bg-info input::-webkit-input-placeholder {
-    color: rgba(255, 255, 255, 0.8); }
-  .bg-info input:-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.8); }
-  .bg-info input::-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.8); }
-  .bg-info input::placeholder {
-    color: rgba(255, 255, 255, 0.8); }
-  .bg-info .input-group-text {
-    color: #fff; }
-
-.bg-warning {
-  color: #212529; }
-  .bg-warning input::-webkit-input-placeholder {
-    color: rgba(33, 37, 41, 0.8); }
-  .bg-warning input:-ms-input-placeholder {
-    color: rgba(33, 37, 41, 0.8); }
-  .bg-warning input::-ms-input-placeholder {
-    color: rgba(33, 37, 41, 0.8); }
-  .bg-warning input::placeholder {
-    color: rgba(33, 37, 41, 0.8); }
-  .bg-warning .input-group-text {
-    color: #212529; }
-
-.bg-danger {
-  color: #fff; }
-  .bg-danger input::-webkit-input-placeholder {
-    color: rgba(255, 255, 255, 0.8); }
-  .bg-danger input:-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.8); }
-  .bg-danger input::-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.8); }
-  .bg-danger input::placeholder {
-    color: rgba(255, 255, 255, 0.8); }
-  .bg-danger .input-group-text {
-    color: #fff; }
-
-.bg-light {
-  color: #212529; }
-  .bg-light input::-webkit-input-placeholder {
-    color: rgba(33, 37, 41, 0.8); }
-  .bg-light input:-ms-input-placeholder {
-    color: rgba(33, 37, 41, 0.8); }
-  .bg-light input::-ms-input-placeholder {
-    color: rgba(33, 37, 41, 0.8); }
-  .bg-light input::placeholder {
-    color: rgba(33, 37, 41, 0.8); }
-  .bg-light .input-group-text {
-    color: #212529; }
-
-.bg-dark {
-  color: #fff; }
-  .bg-dark input::-webkit-input-placeholder {
-    color: rgba(255, 255, 255, 0.8); }
-  .bg-dark input:-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.8); }
-  .bg-dark input::-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.8); }
-  .bg-dark input::placeholder {
-    color: rgba(255, 255, 255, 0.8); }
-  .bg-dark .input-group-text {
-    color: #fff; }
-
-
-
     /* header menu */
 
     header {
@@ -5595,6 +5486,7 @@ body::after {
     background-attachment: fixed;
     overflow: hidden;
     padding: 0;
+    margin-top: -1300px;
   }
   
   
@@ -5972,16 +5864,6 @@ body::after {
   background-color: #0d6efd;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-  .formulario-simples-rbm {
-    justify-content: center;
-  }
-
-  .form-box-rbm {
-    width: 100%;
-  }
-}
 
 .formulario-container-rbm {
   display: flex;
@@ -6002,23 +5884,7 @@ body::after {
 
 
 
-/* Responsivo */
-@media (max-width: 768px) {
-  .formulario-container-rbm {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-family: inherit;
-    font-weight: 100; /* Extremamente fino */
-    letter-spacing: 1px; /* Se quiser mais espaçamento entre letras */
-  }
 
-  .mapa-box-rbm iframe {
-    width: 100%;
-    height: 50px;
-    margin-top: 20px;
-  }
-}
 .mapa-box-rbm {
   width: 40%;
   height: 120px; /* altura real visível no rodapé */
