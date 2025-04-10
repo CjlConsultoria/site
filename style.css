@@ -6095,11 +6095,15 @@ body::after {
   font-size: 4rem; /* ⬅️ TÍTULO MAIOR */
   margin-bottom: 25px;
   font-weight: bold;
+  font-family: inherit;
+  font-weight: 100;
 }
 
 .rbm-conteudo-centralizado p {
   font-size: 1.4rem;
   margin-bottom: 35px;
+  font-family: inherit;
+  font-weight: 100;
 }
 
 .rbm-botoes a {
