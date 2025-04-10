@@ -75,24 +75,161 @@ footer {
   position: relative; /* Permite ajustar a posição da linha */
   left: -0%; /* Ajusta a linha para a esquerda */
 }
-  </style>
+h1.main-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+.custom-card {
+  width: 230px;
+  height: 280px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card img {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-label {
+  height: 25%;
+  background-color: #1b1b1b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.custom-card:hover .card-label {
+  background-color: #313131; /* Cor de destaque no hover */
+}
+/* CSS */
+.sessao-cjl {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.card-cjl {
+  background-color: #242424;
+  color: white;
+  padding: 70px 40px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  max-width: 480px;
+  position: absolute;
+  top: 30px;
+  margin-left: -500px;
+  z-index: 2;
+  font-family: inherit;
+  font-weight: 100;
+}
+
+.card-cjl h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  font-family: inherit;
+  font-weight: 100;
+}
+
+.card-cjl h2 span {
+  font-weight: 100;
+  color: #d3d3d3;
+  font-family: inherit;
+}
+
+.card-cjl p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  font-family: inherit;
+  font-weight: 100;
+}
+
+.botao-cjl:hover {
+  transform: translateY(-3px);
+}
+
+.imagem-cjl img {
+  width: 500px;
+  height: 450px;
+  border-radius: 20px;
+  object-fit: cover;
+  z-index: 1;
+  margin-left: 400px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .sessao-cjl {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-cjl {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .imagem-cjl img {
+    width: 100%;
+  }
+}
+
+.titulo-cinza {
+  color: #d3d3d3;
+  font-family: inherit;
+  font-weight: 100;
+}
+
+ </style>
   <body class="text-center">
     <!-- Navbar -->
     <header id="header">
       <nav class="navbar navbar-expand-md fixed-top navbar-dark" style="background-color: rgba(0, 0, 0, 0.85);">
-  
-  
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="img/Imagem_do_WhatsApp_de_2025-04-06_à_s__23.43.57_66dd4ba3-removebg-preview.png" alt="Logo" class="logo-img">
-  
           </a>
           
           <button class="navbar-toggler navbar-toggler-right" id="btn-menu" type="button">
-            <i class="bi bi-list"></i> <!-- Ícone de abrir menu -->
+            <i class="bi bi-list"></i>
           </button>
           
-          <div class="collapse navbar-collapse justify-content-center" id="navbar2SupportedContent">
+          <!-- ALTERADO AQUI ↓ -->
+          <div class="collapse navbar-collapse justify-content-end" id="navbar2SupportedContent">
             <ul class="navbar-nav">
               <li class="nav-item mx-2">
                 <a class="nav-link" href="index.html">Início</a>
@@ -104,13 +241,14 @@ footer {
                 <a class="nav-link" href="servicos.html">Serviços</a>
               </li>        
               <li class="nav-item mx-2">
-                  <a class="nav-link" href="planos.html">Planos de Consultoria</a>
-                </li>   
+                <a class="nav-link" href="planos.html">Planos de Consultoria</a>
+              </li>   
             </ul>
             <a class="btn navbar-btn mx-2 btn-outline-primary" href="https://wa.me/5527992828470?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento." target="_blank">Fale Conosco</a>
           </div>
         </div>
       </nav>
+      
       <div class="image-container" style="height: 60vh; overflow: hidden;">
         <img src="img/iStock-1047716020.jpg" alt="Imagem Responsiva" id="animatedImage" style="width: 100%; height: auto; object-fit: cover; object-position: top;">
       </div>
@@ -122,7 +260,7 @@ footer {
       </div>
       
       <div class="text-overlay">
-        <div id="slideText" style="font-weight: 900; font-size: 3rem; font-family: inherit; margin-top: -120px;">TÉCNOLOGIA AVANÇADA</div>
+        <div id="slideText" style="font-weight: 900; font-size: 3rem; font-family: inherit; margin-top: -170px;">TÉCNOLOGIA AVANÇADA</div>
       </div>
       
       <button class="down-arrow" onclick="scrollDown()" aria-label="Descer">
@@ -141,10 +279,43 @@ footer {
         </div>
       
         <div class="content-right">
-          <img src="img/2270823.webp" alt="Imagem Responsiva">
+          <img src="img/ISS_17053_06084.jpg" alt="Imagem Responsiva">
         </div>
       </section>
-      
+      <div class="card-container">
+        <div class="custom-card">
+          <img src="img/consultoria.webp" alt="Consultoria">
+          <div class="card-label" style="color: #b9b9b9;">CONSULTORIA</div>
+        </div>
+        <div class="custom-card">
+          <img src="img/terceirizacao.png" alt="Terceirização">
+          <div class="card-label" style="color: #b9b9b9;">TERCEIRIZAÇÃO</div>
+        </div>
+        <div class="custom-card">
+          <img src="img/planejamento.webp" alt="Planejamento">
+          <div class="card-label" style="color: #b9b9b9;">PLANEJAMENTO</div>
+        </div>
+        <div class="custom-card">
+          <img src="img/projetos.jpg" alt="Projetos">
+          <div class="card-label" style="color: #b9b9b9;">PROJETOS</div>
+        </div>
+      </div><br><br>
+<!-- HTML -->
+<section class="sessao-cjl" style="font-family: inherit; font-weight: 100;">
+  <div class="card-cjl" style="font-family: inherit; font-weight: 100;">
+    <h2 style="font-family: inherit; font-weight: 100;"><strong class="titulo-cinza" style="font-family: inherit; font-weight: 100;">Muito além</strong> de um mero <span>"cara da TI"</span> ou um simples <span>"apagador de incêndios"</span>.</h2>
+
+    <p style="font-family: inherit; font-weight: 100;">Oferecemos um grupo de profissionais especializados, prontos para atendê-lo de forma excepcional e eliminar definitivamente os seus problemas tecnológicos.</p>
+    <a class="btn navbar-btn mx-2 btn-outline-primary" href="https://wa.me/5527992828470?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento." target="_blank">CONTATE-NOS</a>
+  </div>
+  <div class="imagem-cjl">
+    <img src="img/shutterstock_769319098FILEminimizer-scaled.jpg" alt="Equipe de TI">
+  </div>
+</section>
+
+
+
+
       
     <!-- Rodapé -->
     <footer class="conteudo-rodape" style="background-color: #252525; width: 100%; height: 500px; display: flex; flex-direction: column; justify-content: space-between; padding: 20px; box-sizing: border-box;">
