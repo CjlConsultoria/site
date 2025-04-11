@@ -5486,7 +5486,7 @@ body::after {
     background-attachment: fixed;
     overflow: hidden;
     padding: 0;
-    margin-top: -1300px;
+    margin-top: -1600px;
   }
   
   
@@ -6011,13 +6011,16 @@ body::after {
 
 /* Se for necessário garantir que o rodapé fique fixo no fundo da tela, use o seguinte */
 footer {
-  position: relative; /* Mantém o rodapé dentro da área de conteúdo */
-  bottom: 0;
-  left: 0;
-  width: 100%; /* Isso ocupa 100% da largura da tela */
-  z-index: 10; /* Pode ser ajustado se sobrepor outros elementos */
-
+  height: 300px; /* Tamanho fixo */
+  background-color: #1e1e1e; /* cor de fundo opcional */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  overflow: hidden;
 }
+
 .rodape-direita iframe {
   width: 100%;
   height: 100%;
